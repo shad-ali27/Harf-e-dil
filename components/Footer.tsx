@@ -34,10 +34,8 @@ const Footer: React.FC<FooterProps> = ({ onAdminClick }) => {
   };
 
   return (
-    <footer id="contact" className="bg-burgundy text-cream pt-32 pb-16 px-6 relative overflow-hidden">
-      {/* Decorative background element */}
+    <footer id="contact" className="bg-burgundy text-cream pt-32 pb-16 px-6 relative overflow-hidden font-sans">
       <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-gold/5 rounded-full -mr-40 -mt-40 blur-[120px]"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-cream/5 rounded-full -ml-32 -mb-32 blur-[80px]"></div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 border-b border-cream/10 pb-24 mb-16">
         <div className="space-y-10">
@@ -45,27 +43,27 @@ const Footer: React.FC<FooterProps> = ({ onAdminClick }) => {
             <h2 className="text-5xl font-serif font-bold tracking-tight">Harf-e-Ali</h2>
             <div className="w-24 h-1.5 bg-gold rounded-full opacity-60"></div>
           </div>
-          <p className="font-sans opacity-70 leading-relaxed max-w-sm text-lg font-medium">
-            Dil se dil tak pahuchne waale alfaaz. Humari koshish hai ki aapke har jazbaat ko humari shayari ek naya mod de.
+          <p className="font-accent italic opacity-70 leading-relaxed max-w-sm text-xl font-medium">
+            "Hum to putle hai, koi door le rakha hai hamari..." - Exploring the silence within through Hinglish poetry.
           </p>
-          <div className="flex space-x-8 pt-6">
-            {/* Instagram - Official complete glyph logo */}
+          <div className="flex space-x-6 pt-6">
             <a 
               href="https://www.instagram.com/shadalix19?igsh=MnlqbjQ5bnBkZ2k5" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-5 bg-cream/5 rounded-[1.5rem] hover:bg-gold hover:text-burgundy transition-all duration-500 shadow-2xl group border border-cream/5"
+              className="p-5 bg-cream/5 rounded-2xl hover:bg-gold hover:text-burgundy transition-all duration-500 group border border-cream/5"
+              aria-label="Instagram"
             >
-              <svg className="w-7 h-7 transform group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.227.412.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36.105.413 2.227.057 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.249 1.805-.413 2.227-.217.562-.477.96-.896 1.382-.419.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.805-.249-2.227-.413-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.249-1.805.412-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.277.057-2.15.26-2.914.557-.79.307-1.458.718-2.123 1.383-.665.665-1.076 1.333-1.383 2.123-.297.764-.5 1.637-.557 2.914-.059 1.28-.073 1.688-.073 4.947s.014 3.667.072 4.947c.058 1.277.26 2.15.557 2.914.307.79.718 1.458 1.383 2.123.665.665 1.333 1.076 2.123 1.383.764.297 1.637.5 2.914.557 1.28.059 1.688.073 4.947.073s3.667-.014 4.947-.072c1.277-.058 2.15-.26 2.914-.557.79-.307 1.458-.718 2.123-1.383.665-.665 1.076-1.333 1.383-2.123.297-.764.5-1.637.557-2.914.059-1.28.073-1.688.073-4.947s-.014-3.667-.072-4.947c-.058-1.277-.26-2.15-.557-2.914-.307-.79-.718-1.458-1.383-2.123-.665-.665-1.333-1.076-2.123-1.383-.764-.297-1.637-.5-2.914-.557-1.28-.059-1.688-.073-4.947-.073zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              <svg className="w-6 h-6 transform group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7.75 2h8.5C19.425 2 22 4.575 22 7.75v8.5C22 19.425 19.425 22 16.25 22h-8.5C4.575 22 2 19.425 2 16.25v-8.5C2 4.575 4.575 2 7.75 2zm0 1.5C5.408 3.5 3.5 5.408 3.5 7.75v8.5c0 2.342 1.908 4.25 4.25 4.25h8.5c2.342 0 4.25-1.908 4.25-4.25v-8.5c0-2.342-1.908-4.25-4.25-4.25h-8.5zM12 7c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5-5-5zm0 1.5c-1.933 0-3.5 1.567-3.5 3.5s1.567 3.5 3.5 3.5 3.5-1.567 3.5-3.5-1.567-3.5-3.5-3.5zM17.5 5.25a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z" />
               </svg>
             </a>
-            {/* Email */}
             <a 
               href="mailto:projectsofshaddy@gmail.com" 
-              className="p-5 bg-cream/5 rounded-[1.5rem] hover:bg-gold hover:text-burgundy transition-all duration-500 shadow-2xl group border border-cream/5"
+              className="p-5 bg-cream/5 rounded-2xl hover:bg-gold hover:text-burgundy transition-all duration-500 group border border-cream/5"
+              aria-label="Email"
             >
-              <svg className="w-7 h-7 transform group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+              <svg className="w-6 h-6 transform group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </a>
@@ -74,39 +72,19 @@ const Footer: React.FC<FooterProps> = ({ onAdminClick }) => {
 
         <div className="space-y-12">
           <h3 className="text-2xl font-serif font-bold text-gold tracking-wide">Quick Links</h3>
-          <ul className="space-y-6 font-sans opacity-80 text-lg font-medium">
-            <li>
-              <button onClick={() => scrollTo('#home')} className="hover:text-gold transition-all flex items-center group">
-                <span className="w-0 group-hover:w-6 h-px bg-gold mr-0 group-hover:mr-4 transition-all duration-500"></span>
-                Home Journey
-              </button>
-            </li>
-            <li>
-              <button onClick={() => scrollTo('#categories')} className="hover:text-gold transition-all flex items-center group">
-                <span className="w-0 group-hover:w-6 h-px bg-gold mr-0 group-hover:mr-4 transition-all duration-500"></span>
-                Categories
-              </button>
-            </li>
-            <li>
-              <button onClick={() => scrollTo('#library')} className="hover:text-gold transition-all flex items-center group">
-                <span className="w-0 group-hover:w-6 h-px bg-gold mr-0 group-hover:mr-4 transition-all duration-500"></span>
-                Poetry Library
-              </button>
-            </li>
-            <li>
-              <button onClick={() => scrollTo('#about')} className="hover:text-gold transition-all flex items-center group">
-                <span className="w-0 group-hover:w-6 h-px bg-gold mr-0 group-hover:mr-4 transition-all duration-500"></span>
-                Essence
-              </button>
-            </li>
+          <ul className="space-y-6 opacity-80 text-lg font-medium">
+            <li><button onClick={() => scrollTo('#home')} className="hover:text-gold transition-all flex items-center group font-sans uppercase text-xs tracking-widest"><span className="w-0 group-hover:w-6 h-px bg-gold mr-0 group-hover:mr-4 transition-all duration-500"></span>Home Journey</button></li>
+            <li><button onClick={() => scrollTo('#categories')} className="hover:text-gold transition-all flex items-center group font-sans uppercase text-xs tracking-widest"><span className="w-0 group-hover:w-6 h-px bg-gold mr-0 group-hover:mr-4 transition-all duration-500"></span>Categories</button></li>
+            <li><button onClick={() => scrollTo('#library')} className="hover:text-gold transition-all flex items-center group font-sans uppercase text-xs tracking-widest"><span className="w-0 group-hover:w-6 h-px bg-gold mr-0 group-hover:mr-4 transition-all duration-500"></span>Library</button></li>
+            <li><button onClick={() => scrollTo('#about')} className="hover:text-gold transition-all flex items-center group font-sans uppercase text-xs tracking-widest"><span className="w-0 group-hover:w-6 h-px bg-gold mr-0 group-hover:mr-4 transition-all duration-500"></span>Reflection</button></li>
           </ul>
         </div>
 
         <div className="space-y-12">
           <div className="space-y-4">
-            <h3 className="text-2xl font-serif font-bold text-gold tracking-wide">Apni Shayari Bhejein</h3>
-            <p className="font-sans opacity-70 text-lg leading-relaxed max-w-sm">
-              Apne dil ke alfaaz humein bhejein, hum use library mein shamil karein.
+            <h3 className="text-2xl font-serif font-bold text-gold tracking-wide">Peshkash</h3>
+            <p className="opacity-70 text-lg leading-relaxed max-w-sm">
+              Send your raw thoughts to our desk. We'll ink them into the archive.
             </p>
           </div>
           
@@ -115,15 +93,15 @@ const Footer: React.FC<FooterProps> = ({ onAdminClick }) => {
               <textarea 
                 value={userPoetry}
                 onChange={(e) => setUserPoetry(e.target.value)}
-                placeholder="Apni shayari yahan likhein..." 
+                placeholder="Likhiye apne jazbaat..." 
                 rows={3}
-                className="bg-transparent px-4 py-2 w-full focus:outline-none text-cream text-base placeholder:opacity-30 placeholder:font-medium resize-none custom-scrollbar"
+                className="bg-transparent px-4 py-2 w-full focus:outline-none text-cream text-base placeholder:opacity-30 resize-none font-accent italic"
               />
               <button 
                 onClick={handleSend}
-                className="bg-gold text-burgundy w-full py-4 rounded-[1.5rem] font-black hover:bg-white transition-all text-xs uppercase tracking-[0.3em] shadow-2xl active:scale-95 whitespace-nowrap"
+                className="bg-gold text-burgundy w-full py-4 rounded-[1.5rem] font-black hover:bg-white transition-all text-xs uppercase tracking-[0.3em] font-sans active:scale-95"
               >
-                SEND
+                SUBMIT MANUSCRIPT
               </button>
             </div>
           </div>
@@ -131,17 +109,13 @@ const Footer: React.FC<FooterProps> = ({ onAdminClick }) => {
       </div>
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center border-t border-cream/5 pt-12 space-y-8 md:space-y-0">
-        <p className="opacity-30 text-[11px] font-sans tracking-[0.4em] uppercase font-bold">© 2026 Harf-e-Ali. Made with Ishq.</p>
-        
-        <div className="flex items-center space-x-12">
-          <button 
-            onClick={onAdminClick} 
-            className="text-[11px] font-black uppercase tracking-[0.5em] text-gold/60 hover:text-gold transition-all border-b border-transparent hover:border-gold/30 pb-1"
-          >
-            Admin Panel
-          </button>
-          <span className="font-serif italic text-2xl normal-case tracking-normal text-gold/40 select-none">Harf-e-Ali</span>
-        </div>
+        <p className="opacity-30 text-[11px] font-sans tracking-[0.4em] uppercase font-bold">© 2026 Harf-e-Ali. Ink of Ali.</p>
+        <button 
+          onClick={onAdminClick} 
+          className="text-[11px] font-black uppercase tracking-[0.5em] text-gold/60 hover:text-gold transition-all font-sans"
+        >
+          Admin Console
+        </button>
       </div>
     </footer>
   );

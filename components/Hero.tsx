@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-burgundy/5 rounded-full blur-[120px] -z-10 animate-pulse delay-1000"></div>
 
       <div className="animate-fade-in space-y-10 max-w-4xl relative z-10">
-        <div className="inline-flex items-center space-x-3 px-6 py-2.5 rounded-full border border-burgundy/10 text-[10px] font-black uppercase tracking-[0.5em] text-burgundy/50 bg-white/30 backdrop-blur-sm shadow-sm">
+        <div className="inline-flex items-center space-x-3 px-6 py-2.5 rounded-full border border-burgundy/10 text-[10px] font-black uppercase tracking-[0.5em] text-burgundy/50 bg-white/30 backdrop-blur-sm shadow-sm font-sans">
           <span className="w-2 h-2 rounded-full bg-gold animate-ping"></span>
           <span>A Poetic Journey</span>
         </div>
@@ -35,22 +35,22 @@ const Hero: React.FC = () => {
           <span className="font-accent italic font-normal text-gold block mt-4">Alfaaz-e-Dil</span>
         </h1>
         
-        <p className="font-sans text-xl md:text-2xl text-burgundy/60 max-w-2xl mx-auto leading-relaxed font-medium px-4">
+        <p className="font-accent text-xl md:text-2xl text-burgundy/60 max-w-2xl mx-auto leading-relaxed font-medium px-4 italic">
           A poetic Hinglish world – emotions, shayari, aur Gen-Z vibes. <br className="hidden md:block" /> Dil ki baatein, humari alfaazon ki zubaan mein.
         </p>
         
-        <div className="pt-12 flex flex-col sm:flex-row gap-6 justify-center items-center w-full max-w-md mx-auto">
+        <div className="pt-12 flex flex-col sm:flex-row gap-6 justify-center items-center w-full max-w-md mx-auto font-sans">
           <button 
-            onClick={() => scrollTo('#categories')}
+            onClick={() => scrollTo('#library')}
             className="w-full sm:w-auto px-12 py-5 bg-burgundy text-cream rounded-[1.5rem] font-sans font-black uppercase tracking-[0.3em] text-[11px] hover:bg-gold hover:text-burgundy transition-all hover:scale-105 shadow-[0_20px_40px_rgba(107,15,26,0.2)] active:scale-95"
           >
-            Explore Shayari
+            Open Library
           </button>
           <button 
             onClick={() => scrollTo('#about')}
             className="w-full sm:w-auto px-12 py-5 border-2 border-burgundy/10 text-burgundy rounded-[1.5rem] font-sans font-black uppercase tracking-[0.3em] text-[11px] hover:bg-burgundy hover:text-cream transition-all hover:scale-105 active:scale-95 backdrop-blur-md"
           >
-            Essence
+            Reflection
           </button>
         </div>
       </div>

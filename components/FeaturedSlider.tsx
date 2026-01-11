@@ -23,17 +23,17 @@ const FeaturedSlider: React.FC<FeaturedSliderProps> = ({ customData }) => {
 
   return (
     <div className="relative bg-white/40 backdrop-blur-md rounded-3xl p-10 md:p-20 overflow-hidden border border-burgundy/5 shadow-inner">
-      <div className="absolute top-8 left-10 flex items-center space-x-3 text-burgundy/30">
+      <div className="absolute top-8 left-10 flex items-center space-x-3 text-burgundy/30 font-sans">
         <span className="w-12 h-px bg-burgundy/20"></span>
         <span className="text-[10px] uppercase font-bold tracking-[0.4em]">Trending Now</span>
       </div>
 
       <div className="flex flex-col items-center justify-center min-h-[300px]">
         <div 
-          key={currentIndex}
+          key={featured[currentIndex].id}
           className="animate-fade-in text-center max-w-3xl transition-all duration-1000 transform"
         >
-          <p className="font-accent text-3xl md:text-5xl text-burgundy font-semibold leading-snug mb-10 opacity-90">
+          <p className="font-accent text-3xl md:text-5xl text-burgundy font-semibold leading-snug mb-10 opacity-90 italic">
             "{featured[currentIndex].content}"
           </p>
           <div className="flex items-center justify-center space-x-6">
@@ -45,9 +45,9 @@ const FeaturedSlider: React.FC<FeaturedSliderProps> = ({ customData }) => {
       </div>
 
       <div className="absolute bottom-10 left-0 right-0 flex justify-center space-x-3">
-        {featured.map((_, i) => (
+        {featured.map((item, i) => (
           <button 
-            key={i}
+            key={item.id}
             onClick={() => setCurrentIndex(i)}
             className={`h-1.5 rounded-full transition-all duration-500 ${currentIndex === i ? 'w-10 bg-burgundy' : 'w-2 bg-burgundy/10 hover:bg-burgundy/30'}`}
           />
